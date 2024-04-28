@@ -1,0 +1,14 @@
+# port #
+server:
+  port: 30000
+  shutdown: graceful
+# Spring.cloud.feign #
+spring:
+  cloud:
+    openfeign:
+      httpclient:
+        enabled: true
+        connection-timeout: 5000 #connection-time out
+  data:
+    mongodb:
+      uri: mongodb://root:WinkAldaold123!@localhost:27017/carinfo
