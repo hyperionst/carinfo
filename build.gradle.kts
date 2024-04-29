@@ -36,6 +36,8 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	//mongodb dependancy
 	implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
+	//kotlin-logging
+	implementation("io.github.microutils:kotlin-logging:2.0.11")
 
 }
 

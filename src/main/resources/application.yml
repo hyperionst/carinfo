@@ -11,4 +11,8 @@ spring:
         connection-timeout: 5000 #connection-time out
   data:
     mongodb:
-      uri: mongodb://root:WinkAldaold123!@localhost:27017/carinfo
+      host: localhost
+      port: 27017
+      database: car_info
+      username: carinfo
+      password: WinkAldaold123!

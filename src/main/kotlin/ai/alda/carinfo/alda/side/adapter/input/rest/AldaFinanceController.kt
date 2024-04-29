@@ -1,8 +1,9 @@
 package ai.alda.carinfo.alda.side.adapter.input.rest
 
+import ai.alda.carinfo.application.api.side.port.ApiServicePort
+import ai.alda.carinfo.alda.side.adapter.input.rest.domain.AldaRequest
 import ai.alda.carinfo.application.request.side.port.CarInfoQueryUseCase
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 
 /**
@@ -11,18 +12,30 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class AldaFinanceController(
     private val carInfoQueryUseCase: CarInfoQueryUseCase,
-) {
+)  {
 
-    @GetMapping ("/finance/test/input")
-    fun testInput(): String {
-        //TODO : 임의로 생성한 데이터값을 입력하도록 한다.
-        return "Test Input"
+
+    @PostMapping("/finance/carinfo")
+    fun requestQueryCarInfo(
+        @RequestBody request: AldaRequest,
+    ): String? {
+        return carInfoQueryUseCase.requestQueryCarInfo(
+            name = request.name,
+            vehicleNumber = request.vehicleNumber,
+        )
     }
 
-    @GetMapping("/finance/test/output")
-    fun testOutput(): String {
+
+    @GetMapping("/finance/carinfo")
+    fun getCarInfoData(
+        @RequestParam name: String,
+        @RequestParam vehicleNumber: String
+    ): String? {
         //TODO : 임의로 생성한 데이터값을 전달한다.
-        return "Test Output"
+        return carInfoQueryUseCase.requestGetCarInfo(
+            name = name,
+            vehicleNumber = vehicleNumber,
+        )
     }
 
 }

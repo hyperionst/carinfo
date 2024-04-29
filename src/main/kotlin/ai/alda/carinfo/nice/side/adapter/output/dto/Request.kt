@@ -7,7 +7,7 @@ package ai.alda.carinfo.nice.side.adapter.output.dto
  * - https://niceab.nicednr.co.kr/carInfos
  * - 대상 차량의 자동차 등록원부 및 제원 및 시세에 대한 정보를 조회한다.
  */
-data class NiceRegistrationAndPriceRequest(
+data class RegistrationAndPriceRequest(
     val apiKey : String,
     val chkSec : String,
     val chkKey : String,
@@ -25,7 +25,7 @@ data class NiceRegistrationAndPriceRequest(
  * - https://niceab.nicednr.co.kr/carInfos
  * - 자동차 등록원보 조회 대상기관의 장애 여부를 판단할 수 있다.
  */
-data class NiceHealthCheckRequest(
+data class HealthCheckRequest(
     val apiKey : String,
     val chkSec : String,
     val chkKey : String,

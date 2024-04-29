@@ -11,16 +11,17 @@ import org.springframework.data.mongodb.core.mapping.Document
  */
 @Document(collection = "finance")
 data class FinanceDomain(
-
-    //관리용데이터
     @Id
-    val id : String,
+    var id: String = "",
+    //관리용데이터
     val name : String,
     val vehicleNumber : String,
 
     //여기 아래로부터는 finance로 넘겨주는 데이터가 되어야한다.
-    val registrationInventoryList: List<RegistrationInventory>
-    //TODO: .... Create other members
+//    val registrationInventories : List<RegistrationInventory>,
+//    val gradeList : List<Grade>,
+    val majorResultCode : String?,
+    val minorResultCode : String?
 
 )
 
@@ -45,8 +46,7 @@ data class RegistrationInventory(
     val lastTradeDate : String,
     val finalOwner : String,
     val distance : String,
-    val contentsList: List<Contents>
-    //TODO: .... Create other members
+    val contentsList: List<Contents>,
 )
 
 /**
@@ -55,6 +55,34 @@ data class RegistrationInventory(
  */
 data class Contents(
     val formKind : String,
-    //TODO: .... Create other members
+    val distance : String,
+    val category : String,
+    val seizRequestDate : String,
+    val userIdentityNumber : String,
+    val detail : String,
+    val makerName : String,
+    val classModeName : String,
+    val classModelImageUrl : String,
+    val engineSize : String,
+    val engineType : String,
+    val fuel : String,
+)
 
+/**
+ * ## 등급리스트
+ */
+data class Grade(
+    val name : String,
+    val price : String,
+    val usedVehiclePrice : String,
+    val drivingDistancePriceList : List<DrivingDistancePrice>,
+)
+
+
+/**
+ * ## 주행거리별 시세
+ */
+data class DrivingDistancePrice(
+    val distance : String,
+    val distancePrice : String,
 )

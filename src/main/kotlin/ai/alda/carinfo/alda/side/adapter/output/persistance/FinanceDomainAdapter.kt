@@ -6,19 +6,19 @@ import org.springframework.stereotype.Repository
 
 @Repository
 class FinanceDomainAdapter(
-
     private val financeDomainRepository: FinanceDomainRepository,
 
     ) : FinancePort {
-
 
     override fun saveFinanceDomain(financeDomain: FinanceDomain) {
         financeDomainRepository.save(financeDomain)
     }
 
-    override fun loadFinanceDomain(name: String, vehicleNumber: String): FinanceDomain {
-        TODO("Not yet implemented")
+    override fun loadFinanceDomain(name: String, vehicleNumber: String): FinanceDomain? {
+        return financeDomainRepository.findFirstByNameAndVehicleNumber(
+            name = name,
+            vehicleNumber = vehicleNumber,
+        )
     }
-
 
 }

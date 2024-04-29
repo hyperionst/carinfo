@@ -1,7 +1,6 @@
-package ai.alda.carinfo.application.domain
+package ai.alda.carinfo.alda.side.adapter.input.rest.domain
 
 data class AldaRequest(
-    var requestID : Long,
     var name: String,
     var vehicleNumber : String
 )
