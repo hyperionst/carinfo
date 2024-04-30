@@ -15,7 +15,6 @@ class FinanceDomainAdapterTest @Autowired constructor(
 ) {
     @Test
     fun `should save finance domain correctly`() {
-
         val name="테스트"
         val vehicleNumber = "12사3456"
 
@@ -35,7 +34,6 @@ class FinanceDomainAdapterTest @Autowired constructor(
 
     @Test
     fun `should load finance domain correctly`() {
-
         val name="테스트"
         val vehicleNumber = "12사3456"
 

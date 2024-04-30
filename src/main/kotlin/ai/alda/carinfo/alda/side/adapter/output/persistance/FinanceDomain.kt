@@ -12,10 +12,9 @@ import org.springframework.data.mongodb.core.mapping.Document
 @Document(collection = "finance")
 data class FinanceDomain(
     @Id
-    var id: String = "",
+    val vehicleNumber : String,
     //관리용데이터
     val name : String,
-    val vehicleNumber : String,
 
     //여기 아래로부터는 finance로 넘겨주는 데이터가 되어야한다.
 //    val registrationInventories : List<RegistrationInventory>,

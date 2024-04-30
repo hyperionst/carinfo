@@ -25,7 +25,6 @@ class AldaFinanceController(
         )
     }
 
-
     @GetMapping("/finance/carinfo")
     fun getCarInfoData(
         @RequestParam name: String,

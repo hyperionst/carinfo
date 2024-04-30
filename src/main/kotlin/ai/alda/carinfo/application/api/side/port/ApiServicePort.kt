@@ -1,5 +1,6 @@
 package ai.alda.carinfo.application.api.side.port
 
+import ai.alda.carinfo.nice.side.adapter.output.dto.HealthStatusResponse
 import ai.alda.carinfo.nice.side.adapter.output.dto.NiceCarInfoResponse
 
 /**
@@ -8,5 +9,5 @@ import ai.alda.carinfo.nice.side.adapter.output.dto.NiceCarInfoResponse
  */
 interface ApiServicePort {
     fun getCarInfoData(name: String, vehicleNumber: String) : NiceCarInfoResponse
-    fun getHeathState() : String?
+    fun getHeathState() : HealthStatusResponse
 }

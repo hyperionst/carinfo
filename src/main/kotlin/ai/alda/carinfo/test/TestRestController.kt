@@ -3,6 +3,7 @@ package ai.alda.carinfo.test
 import ai.alda.carinfo.alda.side.adapter.output.persistance.FinanceDomain
 import ai.alda.carinfo.alda.side.adapter.output.persistance.FinanceDomainAdapter
 import ai.alda.carinfo.nice.side.adapter.output.NiceFeignClientAdapter
+import ai.alda.carinfo.nice.side.adapter.output.dto.HealthStatusResponse
 import ai.alda.carinfo.nice.side.adapter.output.dto.NiceCarInfoResponse
 import ai.alda.carinfo.test.feign.TestFeign
 import org.springframework.http.HttpStatus
@@ -16,7 +17,7 @@ class TestRestController (
     private val financeDomainAdapter: FinanceDomainAdapter,
 ) {
 
-    @GetMapping("/nice/test")
+    @GetMapping("/test/feign/carinfo")
     @ResponseStatus(HttpStatus.OK)
     fun niceFeignTest(
         @RequestParam name: String,
@@ -29,8 +30,14 @@ class TestRestController (
     }
 
 
+    @GetMapping("/test/feign/health")
+    @ResponseStatus(HttpStatus.OK)
+    fun niceHealthCheckTest():HealthStatusResponse {
+        return niceFeignClientController.getHeathState()
+    }
 
-    @GetMapping("/nice/save/")
+
+    @GetMapping("/test/db/save")
     @ResponseStatus(HttpStatus.OK)
     fun getSave(
         @RequestParam name: String,
@@ -50,7 +57,7 @@ class TestRestController (
     }
 
 
-    @GetMapping("/nice/load/")
+    @GetMapping("/test/db/load/")
     @ResponseStatus(HttpStatus.OK)
     fun getlaod(
         @RequestParam name: String,

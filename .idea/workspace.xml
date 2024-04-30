@@ -4,34 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bff65dcd-5d9a-4d86-b4aa-0fb2d333dbd2" name="Changes" comment="main Branch initial Commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/config/AppConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/nice/side/adapter/output/dto/Response.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/nice/side/adapter/output/dto/ServiceStatus.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/ai/alda/carinfo/alda/side/adapter/output/persistance/FinanceDomainAdapterTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
+    <list default="true" id="bff65dcd-5d9a-4d86-b4aa-0fb2d333dbd2" name="Changes" comment="feature : input output port linking 완료">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/nice/side/adapter/output/dto/HealthStatusResponse.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-25T135210.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-25T135222.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-25T140834.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-25T140927.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-25T140932.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-25T141046.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-25T141100.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-25T141104.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-25T142103.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-25T142104.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-25T142105.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-25T142114.200.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/alda/side/adapter/input/rest/AldaFinanceController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/alda/side/adapter/input/rest/AldaFinanceController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/alda/side/adapter/output/persistance/FinanceDomain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/alda/side/adapter/output/persistance/FinanceDomain.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/alda/side/adapter/output/persistance/FinanceDomainAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/alda/side/adapter/output/persistance/FinanceDomainAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/application/api/side/port/ApiServicePort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/application/api/side/port/ApiServicePort.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/application/domain/AldaRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/alda/side/adapter/input/rest/domain/AldaRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/application/persistence/side/port/FinancePort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/application/persistence/side/port/FinancePort.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/application/request/side/port/CarInfoQueryUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/application/request/side/port/CarInfoQueryUseCase.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/application/service/CarInfoQueryService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/application/service/CarInfoQueryService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/nice/side/adapter/output/NiceFeignClientAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/nice/side/adapter/output/NiceFeignClientAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/nice/side/adapter/output/dto/NiceRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/nice/side/adapter/output/dto/Request.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/nice/side/adapter/output/dto/Response.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/nice/side/adapter/output/dto/NiceCarInfoResponse.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/nice/side/adapter/output/feign/NiceFeignClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/nice/side/adapter/output/feign/NiceFeignClient.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/test/TestRestController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ai/alda/carinfo/test/TestRestController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ai/alda/carinfo/alda/side/adapter/output/persistance/FinanceDomainAdapterTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ai/alda/carinfo/alda/side/adapter/output/persistance/FinanceDomainAdapterTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +100,7 @@
     "Gradle.Download Sources.executor": "Run",
     "Gradle.FinanceDomainAdapterTest.executor": "Run",
     "Gradle.FinanceDomainAdapterTest.should load finance domain correctly.executor": "Debug",
-    "Gradle.FinanceDomainAdapterTest.should save finance domain correctly.executor": "Debug",
+    "Gradle.FinanceDomainAdapterTest.should save finance domain correctly.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -116,7 +116,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -141,7 +141,7 @@
       <recent name="ai.alda.carinfo.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CarinfoQueryServiceApplication">
+  <component name="RunManager" selected="Gradle.FinanceDomainAdapterTest.should save finance domain correctly">
     <configuration name="FinanceDomainAdapterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -231,8 +231,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.FinanceDomainAdapterTest.should save finance domain correctly" />
-        <item itemvalue="Gradle.FinanceDomainAdapterTest.should load finance domain correctly" />
         <item itemvalue="Gradle.FinanceDomainAdapterTest" />
+        <item itemvalue="Gradle.FinanceDomainAdapterTest.should load finance domain correctly" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +260,9 @@
       <workItem from="1714283446477" duration="63000" />
       <workItem from="1714283568059" duration="2807000" />
       <workItem from="1714347420994" duration="10711000" />
-      <workItem from="1714360596686" duration="19570000" />
+      <workItem from="1714360596686" duration="20140000" />
+      <workItem from="1714390991077" duration="5217000" />
+      <workItem from="1714444174772" duration="9118000" />
     </task>
     <task id="LOCAL-00001" summary="initial Commit">
       <option name="closed" value="true" />
@@ -286,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714283738219</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feature : input output port linking 완료">
+      <option name="closed" value="true" />
+      <created>1714388665918</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714388665918</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +387,8 @@
     <MESSAGE value="initial Commit" />
     <MESSAGE value="main initial Commit" />
     <MESSAGE value="main Branch initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="main Branch initial Commit" />
+    <MESSAGE value="feature : input output port linking 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature : input output port linking 완료" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
