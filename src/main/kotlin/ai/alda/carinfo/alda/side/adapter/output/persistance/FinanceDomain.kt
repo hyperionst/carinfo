@@ -11,77 +11,152 @@ import org.springframework.data.mongodb.core.mapping.Document
  */
 @Document(collection = "finance")
 data class FinanceDomain(
+
+    //관리용데이터
     @Id
     val vehicleNumber : String,
-    //관리용데이터
     val name : String,
 
-    //여기 아래로부터는 finance로 넘겨주는 데이터가 되어야한다.
-//    val registrationInventories : List<RegistrationInventory>,
-//    val gradeList : List<Grade>,
-    val majorResultCode : String?,
-    val minorResultCode : String?
-
+    //API Data
+    val carSise: CarSise?,
+    val carParts: CarParts?,
+    val resultCode: String,
+    val resultMsg: String,
 )
 
-/**
- * ## 등록원부 리스트
- * - 만약 내용이 전부 같은 거라면 List에서 1개만 유지 할예정 'List(0)'
- */
-data class RegistrationInventory(
-    val sequence : String,
-    val formKind : String,
-    val vehicleNumber : String,
-    val deRegistrationDate : String,
-    val vehicleName : String,
-    val vehicleModelType : String,
-    val vehicleIdNumber : String,
-    val ownership : String,
-    val modelYear : String,
-    val color : String,
-    val sourceType : String,
-    val firstDate : String,
-    val makingDate : String,
-    val lastTradeDate : String,
-    val finalOwner : String,
-    val distance : String,
-    val contentsList: List<Contents>,
+data class CarSise(
+    val amcRsltCode: String,
+    val resultCode: String,
+    val processImprtyResnCode: String,
+    val amcRsltMsg: String,
+    val info: Info,
+    val resultMsg: String,
 )
 
-/**
- * ## 사항란
- * - 실제 등록원부 5개씩 끊어저서 등록되어있다.
- */
-data class Contents(
-    val formKind : String,
-    val distance : String,
-    val category : String,
-    val seizRequestDate : String,
-    val userIdentityNumber : String,
-    val detail : String,
-    val makerName : String,
-    val classModeName : String,
-    val classModelImageUrl : String,
-    val engineSize : String,
-    val engineType : String,
-    val fuel : String,
+data class Info(
+    val carinfo: Carinfo,
 )
 
-/**
- * ## 등급리스트
- */
-data class Grade(
-    val name : String,
-    val price : String,
-    val usedVehiclePrice : String,
-    val drivingDistancePriceList : List<DrivingDistancePrice>,
+data class Carinfo(
+    val carClassMakerImg: String,
+    val makerNm: String,
+    val modelId: String,
+    val fuel: String,
+    val classModelImg: String,
+    val usedCarPriceMedian: String,
+    val importYn: String,
+    val engineType: String,
+    val classModelId: String,
+    val shapeCategory: String,
+    val amcRsltCode: String,
+    val makerId: String,
+    val salePrice: String,
+    val usedCarPriceMean: String,
+    val modelNm: String,
+    val amcRsltMsg: String,
+    val yearType: String,
+    val ciyYearType: String,
+    val classModelNm: String,
+    val gradeList: List<GradeList>,
+    val engineSize: String,
+    val prye: String,
+    val gearBox: String,
+    val formNm: String,
+    val vinNum: String,
+    val seatingCapacity: String,
+)
+
+data class GradeList(
+    val grade1yearLaterPrice: String,
+    val gradeId: String,
+    val grade2yearLaterPrice: String,
+    val gradeNm: String,
+    val recommGradeYn: String,
+    val mileageRatio: String,
+    val gradeUsedCarPrice: String,
+    val grade4yearLaterPrice: String,
+    val treadb: String,
+    val treadf: String,
+    val wheelbase: String,
+    val price: String,
+    val trvlDstncPriceList: List<TrvlDstncPriceList>,
+    val grade3yearLaterPrice: String,
+    val tireSizeFront: String,
+    val grade5yearLaterPrice: String,
+    val tireSizeBack: String,
+)
+
+data class TrvlDstncPriceList(
+    val trvlDstnc: String,
+    val trvl3yearLaterPrice: String,
+    val trvlDstncPrice: String,
+    val trvl1yearLaterPrice: String,
+    val trvl2yearLaterPrice: String,
+)
+
+data class CarParts(
+    val outB7001: OutB7001,
+    val processImprtyResnCode: String,
 )
 
 
-/**
- * ## 주행거리별 시세
- */
-data class DrivingDistancePrice(
-    val distance : String,
-    val distancePrice : String,
+data class OutB7001(
+    val list: List<ListB7001>,
+)
+
+data class ListB7001(
+    val resValidPeriod: String,
+    val resCarNo: String,
+    val resMakingDate: String,
+    val resLastTradeDt: String,
+    val resCarModelType: String,
+    val resUserIdentiyNo: String,
+    val resSourceType: String,
+    val resValidDistance: String,
+    val vhrNo: String,
+    val formKind: String,
+    val resUseHistBiz: String,
+    val resFirstDate: String,
+    val resDocNo: String,
+    val resGarage: String,
+    val resClosingDate: String,
+    val resDocType: String,
+    val resUseHistRent: String,
+    val resUseHistYn: String,
+    val resCancellationDate: String,
+    val seq: String,
+    val resColor: String,
+    val inquiryCd: String,
+    val resUseHistGov: String,
+    val resUseType: String,
+    val resContentsList: List<ResContentsList>,
+    val resSpecControlNo: String,
+    val resConfirmDate: String,
+    val predDistance: String,
+    val commCarName: String,
+    val ownerNm: String,
+    val resFinalOwner: String,
+    val resNumber: String,
+    val commCarOption: String,
+    val resVehicleIdNo: String,
+    val resMotorType: String,
+    val resValidEndDt: String,
+    val resDate: String,
+    val resCarYearModel: String,
+    val resValidStartDt: String,
+)
+
+data class ResContentsList(
+    val resSubRegNo: String,
+    val resContents: String,
+    val preResVhrNo: String,
+    val jobNo: String,
+    val resUserIdentiyNo: String,
+    val resRegisterDate: String,
+    val resMainRegNo: String,
+    val resReceiptNo: String,
+    val vhrNo: String,
+    val seq: String,
+    val inquiryCd: String,
+    val formKind: String,
 )

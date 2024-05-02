@@ -37,24 +37,20 @@ class TestRestController (
     }
 
 
-    @GetMapping("/test/db/save")
-    @ResponseStatus(HttpStatus.OK)
-    fun getSave(
-        @RequestParam name: String,
-        @RequestParam vn: String,
-    ): String {
-
-        val financeDomain = FinanceDomain(
-            name = "테스트",
-            vehicleNumber = "12가3456",
-//            gradeList = ArrayList(),
-//            registrationInventories = ArrayList(),
-            majorResultCode = "",
-            minorResultCode = "",
-        )
-        financeDomainAdapter.saveFinanceDomain(financeDomain)
-        return "Saved";
-    }
+//    @GetMapping("/test/db/save")
+//    @ResponseStatus(HttpStatus.OK)
+//    fun getSave(
+//        @RequestParam name: String,
+//        @RequestParam vn: String,
+//    ): String {
+//
+//        val financeDomain = FinanceDomain(
+//            name = "테스트",
+//            vehicleNumber = "12가3456",
+//        )
+//        financeDomainAdapter.saveFinanceDomain(financeDomain)
+//        return "Saved";
+//    }
 
 
     @GetMapping("/test/db/load/")

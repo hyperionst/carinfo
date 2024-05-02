@@ -84,11 +84,11 @@ data class CarParts(
     val processImprtyResnCode: String,
 )
 
-data class OutB0001(
-    val list: List<ListB0001>,
+data class OutB7001(
+    val list: List<ListB7001>,
 )
 
-data class ListB0001(
+data class ListB7001(
     val resValidPeriod: String,
     val resCarNo: String,
     val resMakingDate: String,
@@ -145,11 +145,12 @@ data class ResContentsList(
     val formKind: String,
 )
 
-data class OutB7001(
-    val list: List<ListB7001>,
+
+data class OutB0001(
+    val list: List<ListB0001>,
 )
 
-data class ListB7001(
+data class ListB0001(
     val resValidPeriod: String,
     val resCarNo: String,
     val resMakingDate: String,
@@ -190,7 +191,6 @@ data class ListB7001(
     val resCarYearModel: String,
     val resValidStartDt: String,
 )
-
 data class ResContentsList2(
     val resSubRegNo: String,
     val resContents: String,
